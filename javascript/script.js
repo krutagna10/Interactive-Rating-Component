@@ -17,7 +17,7 @@ ratings.forEach((rating, index) => {
 
 function update() {
    ratings.forEach((rating, index) => {
-      if (currentActive == index) {
+      if (currentActive === index) {
          rating.classList.add('active');
          userRating = rating.textContent;
       }  else {
@@ -27,7 +27,7 @@ function update() {
 }
 
 submitButton.addEventListener('click', () => {
-   if (userRating == 0) {
+   if (userRating === 0) {
       noRating.style.opacity = "100%";
    } else {
    ratingComponent.classList.add('ratings-submitted');
