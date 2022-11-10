@@ -40,7 +40,7 @@ submitButton.addEventListener('click', () => {
         ratingChoice.textContent = userRating;
     }
 })
-//
+
 rateAgainButton.addEventListener('click', () => {
    ratingCardSection.classList.remove('ratings-submitted');
    userRating = 0;
@@ -48,7 +48,6 @@ rateAgainButton.addEventListener('click', () => {
        ratingLabels[index].classList.remove('active');
        rating.checked = false;
    });
-
     errorMessage.classList.add('hidden');
 })
 
