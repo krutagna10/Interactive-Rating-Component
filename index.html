@@ -15,7 +15,7 @@
 <body>
 <main>
     <section class="rating-card-section">
-        <div class="rating-card start-state">
+        <div class="rating-card rating-card--start-state">
             <figure class="rating-card__logo-wrapper">
                 <img class="rating-card__logo" src="images/icon-star.svg" alt="Star logo">
             </figure>
@@ -53,26 +53,26 @@
                 </label>
             </div>
             <p class="rating-card__error-message hidden">Please select a rating!</p>
-            <button class="rating-card__submit-btn btn">
+            <button class="rating-card__btn--submit btn">
                 Submit
             </button>
         </div>
 
-        <div class="rating-card end-state">
-            <figure class="image-container">
-                <img src="images/illustration-thank-you.svg" alt="Thank you Illustration">
+        <div class="rating-card rating-card--end-state">
+            <figure class="rating-card__image-wrapper">
+                <img class="rating-card__image" src="images/illustration-thank-you.svg" alt="Thank you Illustration">
             </figure>
-            <div class="user-choice">
-                <p>You have selected <span class="input">4</span> out of 5</p>
+            <div class="rating-card__choice-label">
+                <p>You have selected <span class="rating-card__choice">4</span> out of 5</p>
             </div>
-            <div class="text-content">
+            <div class="rating-card__text-content">
                 <h2 class="secondary-heading">Thank you!</h2>
                 <p class="rating-card__text">
                     We appreciate you taking the time to give a rating. If you ever need more support,
                     don’t hesitate to get in touch!
                 </p>
             </div>
-            <button class="btn rate-again">
+            <button class="rating-card__btn--again btn">
                 Rate Again
             </button>
         </div>

@@ -2,11 +2,11 @@
 
 const ratings = document.querySelectorAll('.rating-card__rating');
 const ratingLabels = document.querySelectorAll('.rating-card__label');
-const submitButton = document.querySelector('.rating-card__submit-btn');
-const ratingComponent = document.querySelector(".rating-card-section");
-const input = document.querySelector('.input');
-const rateAgainButton = document.querySelector('.rate-again');
+const ratingCardSection = document.querySelector('.rating-card-section');
+const ratingChoice = document.querySelector('.rating-card__choice');
 const errorMessage = document.querySelector('.rating-card__error-message');
+const rateAgainButton = document.querySelector('.rating-card__btn--again');
+const submitButton = document.querySelector('.rating-card__btn--submit');
 
 let currentActive = -1;
 let userRating = 0;
@@ -25,6 +25,7 @@ ratings.forEach((rating, index) => {
     rating.addEventListener('click', () => {
         currentActive = index;
         update();
+        errorMessage.classList.add('hidden');
     })
 })
 
@@ -33,14 +34,14 @@ submitButton.addEventListener('click', () => {
     if (userRating === 0) {
         errorMessage.classList.remove('hidden');
     } else {
-        ratingComponent.classList.add('ratings-submitted');
+        ratingCardSection.classList.add('ratings-submitted');
         errorMessage.classList.add('hidden');
-        input.textContent = userRating;
+        ratingChoice.textContent = userRating;
     }
 })
 //
 rateAgainButton.addEventListener('click', () => {
-   ratingComponent.classList.remove('ratings-submitted');
+   ratingCardSection.classList.remove('ratings-submitted');
    userRating = 0;
    ratings.forEach((rating, index) => {
        ratingLabels[index].classList.remove('active');

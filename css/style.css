@@ -181,39 +181,39 @@ input[type="radio"] {
     color: var(--white) !important;
 }
 
-.rating-card__submit-btn {
+.rating-card__btn--submit {
     margin-top: 1.25rem;
 }
 
 /* End State */
-.rating-card.end-state {
+.rating-card--end-state {
     display: none;
     padding-bottom: 2rem;
-    gap: 1.5rem;
-}
-
-.image-container img {
-    max-width: 100%;
-    display: block;
-}
-
-.end-state .text-content {
     text-align: center;
 }
 
-.user-choice {
+/* When the ratings are submitted*/
+.ratings-submitted .rating-card--start-state {
+    display: none;
+}
+
+.ratings-submitted .rating-card--end-state {
+    display: block;
+}
+
+.rating-card__image {
+    margin-inline: auto;
+}
+
+.rating-card--end-state .rating-card__text-content {
+    text-align: center;
+}
+
+.rating-card__choice-label {
     color: var(--orange);
     background-color: hsl(216, 12%, 54%, 0.1);
     padding: 0.75rem 1.25rem;
     border-radius: 1rem;
-}
-
-.ratings-submitted .rating-card.start-state {
-     display: none;
-}
-
-.ratings-submitted .rating-card.end-state {
-    display: block;
 }
 
 @media (max-width: 25em) {
