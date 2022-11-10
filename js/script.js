@@ -21,6 +21,7 @@ const update = () => {
         }
     })
 }
+
 ratings.forEach((rating, index) => {
     rating.addEventListener('click', () => {
         currentActive = index;
