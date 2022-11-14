@@ -15,7 +15,6 @@ const update = () => {
     ratingLabels.forEach((ratingLabel, index) => {
         if (currentActive === index) {
             ratingLabel.classList.add('active');
-            userRating = ratingLabel.textContent;
         } else {
             ratingLabel.classList.remove('active');
         }
@@ -24,6 +23,7 @@ const update = () => {
 
 ratings.forEach((rating, index) => {
     rating.addEventListener('click', () => {
+        userRating = rating.value;
         currentActive = index;
         update();
         errorMessage.classList.add('hidden');
