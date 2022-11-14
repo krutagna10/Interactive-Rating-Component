@@ -64,11 +64,11 @@ body {
     font-weight: 400;
 }
 
-.primary-heading {
+.rating-card__heading {
     font-size: var(--font-size-400);
 }
 
-.secondary-heading {
+.rating-card__subheading {
     font-size: var(--font-size-300);
 }
 
