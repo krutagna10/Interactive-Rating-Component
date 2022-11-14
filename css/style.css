@@ -58,7 +58,8 @@ body {
 }
 
 
-.primary-heading, .secondary-heading {
+.rating-card__heading,
+.rating-card__subheading {
     color: var(--white);
     margin-bottom: 1rem;
     font-weight: 400;
