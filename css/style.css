@@ -12,10 +12,10 @@
     --fontWeightMedium: 400;
     --fontWeightBold: 700;
 
-    --font-size-100: 0.8125rem;
-    --font-size-200: 1rem;
-    --font-size-300: 1.5rem;
     --font-size-400: 2rem;
+    --font-size-300: 1.5rem;
+    --font-size-200: 1rem;
+    --font-size-100: 0.8125rem;
 }
 
 * {

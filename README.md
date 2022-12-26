@@ -1,4 +1,4 @@
-# Interactive Rating Component
+# Frontend Mentor - Interactive Rating Component
 
 ### Screenshot
 
@@ -10,8 +10,12 @@
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML
+- CSS
 - Vanilla Javascript
+
+## Author
+- Frontend Mentor - [@krutagna10](https://www.frontendmentor.io/profile/krutagna10)
 
 
 
