@@ -11,6 +11,7 @@ const submitButton = document.querySelector('.rating-card__btn--submit');
 let currentActive = -1;
 let userRating = 0;
 
+// Update Function
 const update = () => {
     ratingLabels.forEach((ratingLabel, index) => {
         if (currentActive === index) {
